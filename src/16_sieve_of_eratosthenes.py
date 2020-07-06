@@ -33,5 +33,5 @@ primes_up_to_number = sieve_of_eratosthenes(number)
 is_prime = number in primes_up_to_number
 print(str(is_prime))
 
-if !is_prime:
+if not is_prime:
     exit(1)

@@ -2,6 +2,7 @@
 
 import sys
 
+
 def sieve_of_eratosthenes(limit):
     candidates = set([*range(2, limit+1)])
     for x in range(2, (limit+1)):
@@ -12,6 +13,7 @@ def sieve_of_eratosthenes(limit):
             candidates.discard(composite)
             composite += x
     return candidates
+
 
 args = sys.argv[1:]
 
